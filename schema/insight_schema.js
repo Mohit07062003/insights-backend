@@ -7,11 +7,23 @@ We will be using our _id of the form {fromWallet}:{origin}
 
 const InsightSchema = mongoose.Schema(
   {
-    //   _id: {
-    //     type: String,
-    //     required: true,
-    //   },
     origin: {
+      type: String,
+      required: true,
+    },
+    nonce: {
+      type: String,
+      required: true,
+    },
+    gasPrice: {
+      type: String,
+      required: true,
+    },
+    gas: {
+      type: String,
+      required: true,
+    },
+    to: {
       type: String,
       required: true,
     },
@@ -19,7 +31,15 @@ const InsightSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    to: {
+    value: {
+      type: String,
+      required: true,
+    },
+    data: {
+      type: String,
+      required: true,
+    },
+    chainId: {
       type: String,
       required: true,
     },
